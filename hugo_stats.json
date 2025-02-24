@@ -1,0 +1,52 @@
+{
+  "htmlElements": {
+    "tags": [
+      "a",
+      "body",
+      "div",
+      "footer",
+      "h1",
+      "h2",
+      "head",
+      "header",
+      "html",
+      "img",
+      "li",
+      "main",
+      "meta",
+      "nav",
+      "p",
+      "script",
+      "time",
+      "title",
+      "ul"
+    ],
+    "classes": [
+      "active",
+      "ancestor",
+      "bg-blue-400",
+      "bg-gray-100",
+      "bg-gray-200",
+      "flex",
+      "font-medium",
+      "items-center",
+      "justify-between",
+      "justify-center",
+      "max-w-3xl",
+      "mb-4",
+      "min-h-screen",
+      "p-3",
+      "p-6",
+      "py-10",
+      "relative",
+      "rounded-lg",
+      "rounded-t-lg",
+      "shadow-lg",
+      "space-x-4",
+      "text-blue-500",
+      "w-full",
+      "z-10"
+    ],
+    "ids": null
+  }
+}
