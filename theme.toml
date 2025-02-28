@@ -10,19 +10,13 @@ homepage = 'https://github.com/owner/repo'
 demosite = 'https://owner.github.io/repo'
 
 # Taxonomy terms
-tags = ['blog', 'company']
+tags = ['blog', 'personal']
 features = ['some', 'awesome', 'features']
-
-# If the theme has multiple authors
-authors = [
-  {name = 'Name of author', homepage = 'Website of author'},
-  {name = 'Name of author', homepage = 'Website of author'}
-]
 
 # If the theme has a single author
 [author]
-  name = 'Your name'
-  homepage = 'Your website'
+  name = 'Travis Reid Hopkins'
+  homepage = 'Camp Hopkins'
 
 # If porting an existing theme
 [original]
