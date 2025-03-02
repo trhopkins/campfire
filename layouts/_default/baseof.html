@@ -6,8 +6,13 @@
 </head>
 
 <body class="bg-linear-to-t from-sky-100 to-sky-600 relative">
+  <div>
+    <svg class="size-100 absolute top-1/8 left-1/8 fill-yellow-300" viewbox="0 0 100 50">
+      <circle cx="10" cy="10" r="10" />
+    </svg>
+  </div>
   <div class="absolute top-1/4 left-0">
-    <!-- <svg class="cloud w-72 h-48 opacity-70 animate-cloud-fast text-blue-300" xmlns="http://www.w3.org/2000/svg" -->
+    <!-- cloud -->
     <svg class="cloud size-100 opacity-70 animate-[slide_60s_linear_infinite] text-blue-200" xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 100 50" fill="currentColor">
       <circle cx="30" cy="30" r="20" />
@@ -16,22 +21,24 @@
       <circle cx="40" cy="20" r="15" />
       <circle cx="60" cy="20" r="18" />
     </svg>
-    <!-- <svg class="cloud size-40 opacity-70 animate-[slide_60s_linear_infinite] text-blue-200" xmlns="http://www.w3.org/2000/svg" -->
-    <!--   viewBox="0 0 100 50" fill="currentColor"> -->
-    <!--   <circle cx="40" cy="60" r="30" /> -->
-    <!--   <circle cx="70" cy="65" r="35" /> -->
-    <!--   <circle cx="100" cy="60" r="40" /> -->
-    <!--   <circle cx="130" cy="65" r="35" /> -->
-    <!--   <circle cx="160" cy="60" r="30" /> -->
-    <!--   <circle cx="85" cy="40" r="28" /> -->
-    <!--   <circle cx="115" cy="35" r="32" /> -->
-    <!-- </svg> -->
-    <!-- <svg class="cloud size-20 opacity-70 animate-[slide_60s_linear_infinite] text-blue-200" xmlns="http://www.w3.org/2000/svg" -->
-    <!--   viewBox="0 0 100 50" fill="currentColor"> -->
-    <!--   <circle cx="30" cy="30" r="20" /> -->
-    <!--   <circle cx="50" cy="30" r="20" /> -->
-    <!--   <circle cx="40" cy="20" r="15" /> -->
-    <!-- </svg> -->
+  </div>
+  <div>
+    <svg class="absolute bottom-0 w-full h-[12.5vh]">
+    <!-- grass -->
+    <rect width="100%" height="100%" class="fill-green-600" />
+
+    <!-- tent -->
+    <polygon points="40,5 70,65 10,65" class="fill-black" />
+    <polygon points="40,30 55,65 25,65" class="fill-yellow-500" />
+
+    <!-- fire -->
+    <polygon points="90,65 100,85 80,85" class="fill-red-600" />
+
+    <!-- smoke -->
+    <circle cx="90" cy="75" r="5" class="fill-gray-400 animate-[rise_3s_linear_infinite]" style="animation-delay: 0s;" />
+    <circle cx="95" cy="70" r="6" class="fill-gray-400 animate-[rise_3s_linear_infinite]" style="animation-delay: 0.5s;" />
+    <circle cx="92" cy="65" r="7" class="fill-gray-400 animate-[rise_3s_linear_infinite]" style="animation-delay: 1s;" />
+</svg>
   </div>
   <div class="min-h-screen flex justify-center py-10 relative z-10">
     <div class="bg-gray-100/50 p-6 rounded-lg shadow-lg w-full max-w-3xl relative">
