@@ -1,0 +1,21 @@
+/* html { */
+/*   @apply text-base-sm md:text-base; */
+/* } */
+
+/* body { */
+/*   @apply bg-body text-base font-primary font-normal text-text */
+/* } */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold text-gray-800;
+}
+
+h1,
+.h1 {
+  @apply text-2xl;
+}

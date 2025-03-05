@@ -18,3 +18,8 @@ asdf
 ## h2
 
 asdf asdf
+
+```javascript
+console.log('Hello world');
+const goUpper = (text) => text.upper();
+```

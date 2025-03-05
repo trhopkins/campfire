@@ -22,3 +22,7 @@
   }
 }
 
+@layer base {
+  @import "./base.css";
+}
+
