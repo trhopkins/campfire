@@ -15,7 +15,7 @@
           </div>
         </div>
         <div>
-          <p class="text-sm text-gray-500">{{ .Date | time.Format ":date_medium" }}</p>
+          <p class="text-sm text-gray-500 italic">{{ time.Format ":date_medium" .Date }}</p>
           {{ .Summary }}
         </div>
       </div>

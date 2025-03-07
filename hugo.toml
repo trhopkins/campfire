@@ -48,3 +48,7 @@ weight = 30
     source = 'hugo_stats.json'
     target = 'assets/notwatching/hugo_stats.json'
 
+[markup]
+  [markup.highlight]
+    style = 'catppuccin-latte'
+
