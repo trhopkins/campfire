@@ -8,7 +8,7 @@
     </div>
   </div>
   {{ $dateMachine := .Date | time.Format "1970-01-01T00:00:00-05:00" }}
-  {{ $dateHuman := .Date | time.Format ":date_medium" }}
+  {{ $dateHuman := .Date | time.Format ":date_long" }}
   <time datetime="{{ $dateMachine }}" class="italic text-xs text-gray-500">{{ $dateHuman }}</time>
   <div id="single" class="prose prose-slate post-content">
     {{ .Content }}
