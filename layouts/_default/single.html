@@ -1,11 +1,16 @@
 {{ define "main" }}
-  <h2 class="text-3xl font-bold text-gray-800">{{ .Title }}</h2>
-
-  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-  {{ $dateHuman := .Date | time.Format ":date_long" }}
+  <div class="flex flex-row justify-between">
+    <h2 class="text-3xl font-bold text-gray-800">{{ .Title }}</h2>
+    <div class="flex flex-row items-center text-sm text-gray-500 py-2">
+      {{ range .Params.tags }}
+        <span class="px-1">#{{ . }}</span>
+      {{ end }}
+    </div>
+  </div>
+  {{ $dateMachine := .Date | time.Format "1970-01-01T00:00:00-05:00" }}
+  {{ $dateHuman := .Date | time.Format ":date_medium" }}
   <time datetime="{{ $dateMachine }}" class="italic text-xs text-gray-500">{{ $dateHuman }}</time>
   <div id="single" class="prose prose-slate post-content">
     {{ .Content }}
   </div>
-  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
 {{ end }}

@@ -33,7 +33,7 @@ Renders a menu for the given menu ID.
         {{- $name = . }}
       {{- end }}
     {{- end }}
-      <a class="text-blue-500 p-2 font-medium rounded-md hover:bg-gray-300 hover:text-white"
+      <a class="text-blue-500 p-2 font-md rounded-md hover:font-bold"
         {{- range $k, $v := $attrs }}
           {{- with $v }}
             {{- printf " %s=%q" $k $v | safeHTMLAttr }}
