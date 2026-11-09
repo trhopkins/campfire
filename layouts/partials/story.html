@@ -1,0 +1,5 @@
+<div class="story">
+  <h3><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
+  {{ partial "byline.html" . }}
+  <p>{{ .Summary | plainify | truncate 160 }}</p>
+</div>

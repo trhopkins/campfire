@@ -1,2 +1,8 @@
-<h1>{{ site.Title }}</h1>
-{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+<div class="masthead">
+  <h1><a href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a></h1>
+  <div class="dateline">
+    <span>{{ now | time.Format ":date_full" }}</span>
+    {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+    <span>{{ len site.RegularPages }} stories</span>
+  </div>
+</div>
