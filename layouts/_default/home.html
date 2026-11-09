@@ -1,7 +1,15 @@
 {{ define "main" }}
   {{ .Content }}
-  {{ range site.RegularPages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
+  {{ $pages := site.RegularPages.ByDate.Reverse }}
+  {{ with index $pages 0 }}
+    <section class="lead">
+      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+      {{ partial "byline.html" . }}
+      <p>{{ .Summary | plainify | truncate 320 }}</p>
+    </section>
+    <hr>
   {{ end }}
+  <section class="columns">
+    {{ range after 1 $pages }}{{ partial "story.html" . }}{{ end }}
+  </section>
 {{ end }}
